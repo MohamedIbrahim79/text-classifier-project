@@ -1,6 +1,6 @@
 import joblib
 
-# تحميل الموديل
+# Load trained Arabic model
 arabic_model = joblib.load("arabic_model.pkl")
 vectorizer_ar = joblib.load("vectorizer_ar.pkl")
 
