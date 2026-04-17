@@ -2,13 +2,13 @@ from langclassifier import detect_language
 from arabictext import classify_arabic
 from englishtext import classify_english
 
-# خد input من المستخدم
+# Get input from user
 text = input("Enter text: ")
 
-# تحديد اللغة
+# Detect language
 lang = detect_language(text)
 
-# اختيار الموديل المناسب
+# Choose the appropriate model
 if lang == "arabic":
     result = classify_arabic(text)
 elif lang == "english":
@@ -16,6 +16,6 @@ elif lang == "english":
 else:
     result = "Unknown language"
 
-# عرض النتيجة
+# Print results
 print("Language:", lang)
 print("Prediction:", result)
